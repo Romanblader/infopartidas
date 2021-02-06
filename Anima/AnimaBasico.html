@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script lang="text/javascript">
+
+  </script>
+  <style>
+    body {
+      margin-left: 10px;
+      margin-bottom: 10px;
+
+    }
+
+    .pregunta {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 14pt;
+    }
+
+    .respuesta {
+      font-style: italic;
+    }
+
+    .ejemplo {
+      font-style: italic;
+      font-size: 13pt;
+    }
+
+    span.tirada {
+      color: red;
+    }
+
+    span.ref {
+      color: purple;
+      font-weight: bold;
+    }
+
+    .basic {
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: 70px;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>Anima for fun</title>
+</head>
+
+<body>
+  <div class="fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#Inicio">Inicio</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Básico</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#características">Características</a>
+              <a class="dropdown-item" href="#habilidades">Habilidades y Arquetipos</a>
+              <a class="dropdown-item" href="#tiradas">Tiradas</a>
+              <a class="dropdown-item" href="#combate">Combate</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Poderes</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#magia">Magia</a>
+              <a class="dropdown-item" href="#conjuracion">Conjuración</a>
+              <a class="dropdown-item" href="#poderesPsiquicos">Psiónica</a>
+              <a class="dropdown-item" href="#marciales">Poderes Marciales</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">FAQ</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#faqgenerales">Generales</a>
+              <a class="dropdown-item" href="#faqventajas">Ventajas</a>
+              <a class="dropdown-item" href="#faqpreguntas">Preguntas al master</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="basic" id="Inicio">
+    <h1>
+      Anima Beyond Fantasy
+    </h1>
+    <div>Esto es una guía <b>BÁSICA</b> con fundamentos básicos, no pretendo escribir todo el libro de nuevo.</div>
+    <div>Aunque le tengo mucho cariño, este juego está mal hecho. Requiere conocerlo mucho y muchas reglas caseras, para
+      que sea jugable.</div>
+    <div>Para los ejemplos usare diversos personajes</div>
+    <ul>
+      <li>La <span class="ref">Warlock</span> Lady <b>Midnightt</b></li>
+      <li>El increíble <span class="ref">Artista Marcial</span> <b>Rurik</b></li>
+      <li>La magnifica <span class="ref">Conjuradora</span> <b>Vizarra</b></li>
+      <li>La <span class="ref">Psíquica</span> <b>D'mente</b> </li>
+      <li>El <span class="ref">Explorador</span> con la peor suerte del mundo <b>Azucarillo</b></li>
+    </ul>
+    <div style="font-style: italic; font-size: 20px;">La creación de personaje necesitara ayuda (y para la primera los
+      hago yo) pero aquí pondré cosas básicas del juego.</div>
+  </div>
+  <h1 class="basic">Lo más básico</h1>
+  <div class="basic" id="características">
+    <h2>Características</h2>
+    <div class="">El juego tiene un total de 8 características de las que dependen los bonos y muchas habilidades
+      secundarias,
+      de cada una de las diferentes características dependen varias de las capacidades del personaje.<br />
+      Aunque todas son útiles para algún personaje hay alguna que no tiene sentido y provoca tener características de
+      más.<br />
+      Cada característica va de 1 a 10 (salvo que dejes de ser humano que puede llegar a 20) y da un bono dependiendo de
+      la característica.
+    </div>
+    <ul>
+      <li><b>Agilidad</b>: Es lo ágil que eres para moverte inconscientemente, se usa para esquivar o para el turno</li>
+      <li><b>Constitución</b>: Lo regio que es tu cuerpo, tu vida, regeneración y cansancio dependen de ella.</li>
+      <li><b>Destreza</b>: Puede confundirse con la agilidad, pero depende más de tu entrenamiento se usa para parar o
+        golpear y el turno</li>
+      <li><b>Fuerza</b>: Tu increíble musculo, aquello con lo que levantas peso y aumenta la dureza de tus golpes</li>
+      <li><b>Intelecto</b>: Aquí meten el conocimiento y lo bien que puedes usarlo, se usa para saber tus conjuros
+        conocidos</li>
+      <li><b>Percepción</b>: Aunque en otros juegos se usa aparte, aquí es parte del personaje, se explica sola</li>
+      <li><b>Voluntad</b>: Vale para la resistencia mental, los psíquicos le dan más utilidad.</li>
+    </ul>
+    <div class="">Derivados comunes:
+      <div class=""><b>Cansancio</b>: los puntos de cansancio se calculan a partir de la constitución. Sirven para tener
+        bonificadores a las habilidades, pero en caso de que tengas pocos empezaras a tener penalizaciones</div>
+      <div class=""><b>Regeneración</b> Se calcula a partir de la constitución, tiene tabla propia y con mucha puedes
+        regenerar miembros o volver a juntarlos</div>
+      <div class=""><b>Puntos de Vida</b>: Constitución + Bono categoría
+      </div>
+      <div class=""><b><span class="ref">Zeon</span></b>: Por qué decir mana estaba demasiado trillado, se usa para
+        pagar costes de la magia y conjuración</div>
+    </div>
+    <div>1 es infrahumano 2-3 capacidad mermada, 4 la característica está por debajo de la media, 5-6 Estas en la media,
+      7-8 sobresaliente, 9 increíble, 10
+      casi inhumano, digno de los dioses (insertar música épica aquí). hay formas de empezar con 11 en una
+      característica y eso implica que eres posiblemente un dios en esa característica</div>
+    <div class=""><b>Apariencia</b>: La apariencia no es una característica, pero es un numeral igualmente y es
+      importante tenerla antes de ponerte las desventajas (hay una que te la reduce a 2) no da bonificadores ni
+      nada, pero se usa como requerimiento para algunas cosas</div>
+    <div class=""><b>Tamaño</b>: Se parece a la apariencia, pero es derivada entre la fuerza y la constitución. Esta
+      tiene cosas que explicar, dado que incomprensiblemente una mujer puede tener 2 menos de tamaño que un hombre, con
+      la misma fuerza y constitución, cosa que se tiene discutir antes de empezar a jugar</div>
+  </div>
+  <div class="basic" id="habilidades">
+    <h2>Habilidades</h2>
+    Anima de cierta manera considera una habilidad a algo por lo que puedas hacer una tirada. <br /> Se distribuyen
+    entre:
+    <ul>
+      <li>Habilidades secundarias: Todo aquello con lo que no matas (directamente) y se pueden crear casi a voluntad.
+      </li>
+      <li>Habilidades de combate: Atacar, esquivar, parar, llevar armadura...</li>
+      <li>Habilidades Sobrenaturales: Llaman sobrenatural a todo lo que gaste <span class="ref">Zeon</span> </li>
+      <li>Habilidades Psíquicas: como matar con la mente 101</li>
+    </ul>
+    <h2>Arquetipos</h2>
+    <div class="">En Anima no tenemos clases de personaje, tenemos diferentes categorías, que lo que nos facilitan son
+      habilidades en las que es más fácil que nos desarrollemos.</div>
+    <div class="ejemplo"><b>Midnightt</b> es una guerrera maga, pertenece a dos arquetipos, el de luchador y el de
+      místico, le será más fácil potenciar sus habilidades de combate y sobrenaturales que habilidades secundarias o
+      psíquicas,
+      mientras que <b>D'Mente</b> Que es solo Psíquica solo podrá mejorarse las habilidades psíquicas, pero se
+      centrará en ellas más que <b>Midnightt</b></div>
+    <div class="">Los arquetipos son los siguientes:
+      <ul>
+        <li><b>Luchador</b>: Tiene más fácil mejorar las habilidades de combate</li>
+        <li><b>Místico</b>: Favorece la compra de habilidades místicas (cuenta magos y conjuradores por igual)</li>
+        <li><b>Psíquico</b>: Tiene mejorada la compra de habilidades de mentalista</li>
+        <li><b>Acechador</b>: Aunque con este nombre realmente mejoran las habilidades secundarias</li>
+        <li><b>Domine</b>: Aunque las habilidades de <span class="ref">Ki</span> se pagan con puntos de combate, estos
+          tienen bonificado usar
+          técnicas especiales</li>
+        <li><b>Sin Categoría</b>: Es el comodín, puede hacer de todo, pero nada lo hace bien, suelo usarla para crear
+          pnj (solo está el Novel)</li>
+      </ul>
+    </div>
+    <div class="">Aparte las categorías tienen bonos a ciertas cosas por nivel, dado que tienes una predisposición
+      natural a mejorar dichas habilidades</div>
+    <div class="ejemplo">
+      <b>Vizarra</b> es una Conjuradora y como tal necesitara <span class="ref">Zeon</span> y habilidades de conjuración
+      y por ello de forma natural va mejorando por eso cada nivel le dan un bono extra, a parte de lo que gaste,
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Regla de la casa</h5>
+        <p class="card-text">Como soy muy buena persona regalo a cada arquetipo algo en especial. El don para los
+          místicos, la capacidad de usar psiónica para los psíquicos, tablas de armas para los luchadores etc.</p>
+      </div>
+    </div>
+  </div>
+  <div class="basic" id="tiradas">
+    <h2>Tiradas y recomendaciones</h2>
+    Tirada de característica: tirar <span class="tirada">1d10</span> y sacar por debajo (Es raro que aparezca)<br />
+    Tirada de habilidad: <br /> Cuando tiras un <span class="tirada">1D100</span> pueden pasar 3 cosas:
+    <ul>
+      <li>Lo normal: Sumas lo que sacas en la tirada a tu habilidad y bonificadores</li>
+      <li>Pifia: el rango de pifia puede variarse, pero por costumbre es 1-3 en el D100, pero hay desventajas y cosas
+        que modifican este rango</li>
+      <li>Tirada Abierta: Si sacas 90+ en el d100 sigue y suma (a partir de la primera pasa a ser con 91+... pero para
+        que sea más fácil no aplico esto)</li>
+    </ul>
+    <div class="">
+      habilidad contra dificultad: las dificultades (Sin contar rutinario) empiezan en fácil 40 y van
+      aumentando en 40 por cada grado (ejemplo normal es 80, difícil 120...). Pongo un ejemplo para hacerlo más rápido:
+      <div class="ejemplo">
+        <b>Rurik</b> quiere entrar en la taberna de la forma más épica posible y tiene en estilo un total de +85, tira
+        los dados y zas 76, para hacer la cuenta más rápida como es una dificultad, como en la habilidad tiene un 5 al
+        final lo que hará para ir más rápido será redondear la tirada y sería 80, suma 80 + 80 y saco un total de 160
+        que llega a una dificultad casi imposible, consigue su efecto y la gente se le queda mirando.
+      </div>
+    </div>
+    Tiradas enfrentadas: En una tirada enfrentada dos jugadores van a competir uno contra el otro, y como siempre, gana
+    el que saque por encima del rival.
+    <div class="ejemplo">
+      <b>Vizarra</b> tiene unas ganas terribles de comer gachas, pero <b>Azucarillo</b> tiene el ultimo cuenco, por
+      tanto, decide intentar seducirle para robarle las gachas al pobre hombre. <b>Vizarra</b> tira sus dados y saca 82
+      le suma su habilidad de 65 (usa el truco de redondear porque es raro que el empate aparezca) y serian 80 + 60 =
+      140 (luego le suma 5+2 si la diferencia importa). Azucarillo tira y saca 7 tiene voluntad +35 pero eso no le llega
+      porque llegaría a 40 (ya no necesita ver las unidades). <b>Vizarra</b> consiguió sus gachas y el pobre Azucarillo
+      se queda sin comer.
+    </div>
+    <div class=""></div>
+  </div>
+  <div class="basic" id="combate">
+    <h2>El Combate</h2>
+    Esta es la explicación sencilla de combate, luego hay varias acciones especiales, que se explicaran después, estos
+    son los conceptos básicos:
+    <ul>
+      <li>En un turno tenemos acciones pasivas y activas, unas se hacen en nuestro turno y otras no</li>
+      <li>La primera acción no tiene penalización, pero a partir de ella se va acumulando por acción. Empieza en
+        -30 en la 2º acción y aumenta en 20 en subsiguientes</li>
+      <li>El atacante tiene que elegir su habilidad de ataque dependiendo del tipo de ataque y el defensor una de
+        defensa</li>
+      <li>En caso de defensa marcial una de las dos habilidades (defensa y esquiva) es la predominante y la otra es
+        igual a la dominante -50</li>
+      <li>La parada te permite realizar contragolpes, pero la esquiva te permite evitar golpes que ignoran tu parada
+        (como la magia)</li>
+      <li>No, no hay contragolpe en combate a distancia, aunque quedaría muy épico</li>
+      <li>Siempre puedes usar tu habilidad de defensa</li>
+      <li>No recibes daño si el atacante no supera el 20% de daño</li>
+      <li>Hay posicionamiento, y da bonificadores o penalizadores</li>
+    </ul>
+    <h4>Pifia en combate</h4> Si sacas una pifia tiras de nuevo y restas a lo que tienes.
+    <h4>Tirada abierta en combate</h4> Suma y sigue.
+    <h4>¿Critico?</h4>
+    Los críticos en anima es un golpe que supera la mitad de la vida restante del objetivo y lo que
+    hace es ponerle un penalizador.
+    Este penalizador es <span class="tirada">1d100</span> + daño recibido y se le resta tu resistir dolor (Se hace una
+    tirada para ver cuanto
+    ignora).
+    <br /> Este penalizador se va recuperando a razón de 5 por asalto.
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Regla de la casa</h5>
+        <p class="card-text">Para que sea más fácil, redondeo los críticos hacia abajo por múltiplos de 5</p>
+      </div>
+    </div>
+    <h4>Daño</h4>
+    (Daño se realiza suponiendo que el ataque sea superior a la defensa)
+    En la hoja de anima tenemos para colocar nuestro daño por % dado que para calcular el daño que hacemos tenemos que
+    hacer lo siguiente (conforma más se hace antes te acostumbras):
+    <ul>
+      <li>Restas a tu ataque la defensa</li>
+      <li>Si la diferencia es de menos de 30 ignórala, no hay dolor</li>
+      <li>Miras el tipo de daño del arma y la armadura contra ese daño</li>
+      <li>Multiplicas la armadura por 10</li>
+      <li>Redondeas la diferencia entre ataque y defensa y le restas la armadura x10</li>
+      <li>Si el resultado no es negativo, ese es el daño que realizas</li>
+    </ul>
+    <h4>Parada</h4>
+    Si efectúas una parada con éxito (sacas más que el atacante) tienes derecho a un contragolpe bonificado. Esta
+    bonificación es sencilla:
+    <ul>
+      <li>Restas a tu defensa el ataque</li>
+      <li>Redondeas a decenas hacia abajo</li>
+      <li>divides entre 2</li>
+      <li>Ya, eso es, tienes tu bono al contragolpe</li>
+    </ul>
+    <h4>Daño del arma</h4>
+    Ten calculado ya el daño del arma aparte, para no ralentizar la partida. (Eso o automatizarlo con alguna aplicación)
+    <h4>Turno</h4>
+    El turno depende del arma que uses en el turno, teniendo en cuenta que varía dependiendo de lo que
+    quieras hacer durante el turno, es necesario volver a tirarlo al inicio de cada turno.
+    <div class="ejemplo">
+      <b>Rurik</b> Posee diferentes armas, este turno decide portar el hacha descomunal que le regalo si tío Pancracio,
+      tiene un total de -10 a la iniciativa (calculando todos los bonos). <b>Azucarillo</b> Decide que ira
+      con su látigo y tiene un total de +45. <b>Rurik</b> tira <span class="tirada">1d100-10</span> sacando 32,
+      <b>Azucarillo</b> tira <span class="tirada">1d100+45</span> sacando una pifia por lo que la tirada restaría y
+      saca un -30 en total. En este primer turno <b>Rurik</b> usaría su hacha antes que <b>Azucarillo</b> su látigo.
+      <br /> En el siguiente turno <b>Rurik</b> decide tirar su hacha y dar un cabezazo por lo que la iniciativa es +85
+      y <b>Azucarillo</b> se mantiene con su látigo. Como la iniciativa no se mantiene vuelven a tirar.
+      <b>Rurik</b> <span class="tirada">1d100+85</span> saca un total de 142, mientras <b>Azucarillo</b> tira los dados
+      <span class="tirada">1d100+45</span> sacando una tirada abierta por lo que seguiría sumando sacando un total de
+      234.
+      <br /> Este turno azucarillo empieza.
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Regla de la casa</h5>
+        <p class="card-text">En mí caso, se tira una iniciativa y dependiendo del arma se aplica una penalización por
+          turno.
+          No es normal que la gente cambie tanto de arma, y tirar demasiadas veces hace el combate más engorroso de lo
+          que ya es.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="basic" id="magia">
+    <h2>Magia</h2>
+    Al igual que la fuerza en <span class="ref">Galactic Wars</span> o los hechiceros en <span class="ref">Dragones y
+      Mazorcas</span> se necesita algo especial para usar la magia, el <b>DON</b> una ventaja única que nos permite ver
+    el mundo de otra forma. <br /> Al igual que en <span class="ref">Mundo Disco</span> los magos ven más facetas del
+    mundo que los simples mortales.
+    <h4>El <span class="ref">Zeon</span></h4>
+    El <span class="ref">Zeon</span> es aquello que se usa para pagar el coste de cualquier conjuro o invocación. Estos
+    puntos al igual que la
+    vida, tienen una base, pero se pueden ir mejorando por puntos. <br /> El cálculo deriva de poder, pero la fórmula es
+    fácil:
+    <span class="tirada">POD x 10 + Bono de pod + 20 </span>
+    <div class="ejemplo"><b>Midnightt</b> tiene una característica de poder de 7, cuyo bono es de +5 por lo que el
+      cálculo es el siguiente: <span class="tirada">7x10+5+20 = 95</span> El cálculo es idéntico que el de la vida
+      inicial.
+      Eso hace que la base de Midnightt sea de 95 más otros bonos. <br />Mientras <b>Azucarillo</b>, que no necesita el
+      poder para sus habilidades decidió tener poder negativo y tiene un total de 3 eso hace el siguiente calculo: <span
+        class="tirada">3x10-5+20 = 45</span>
+    </div>
+    <h4>Acumulación mágica. ACT</h4>
+    Cuando digo que Anima tiene cosas que no me gustan mucho, esta, es una de ellas. <br />
+    Para lanzar conjuros existe una cosa llamada ACT que es una abreviatura (bastante mala) de <span
+      class="ref">AC</span>umulación por <span class="ref">T</span>urno.
+    Yo la llamo solo <b>acumulación mágica</b>, porque así es más fácil para mí y se entiende mejor.<br />
+    La base se calcula a partir de poder (hay una tabla) y lo que se compra con puntos son los <b>Multiplicadores</b>
+    <br>
+    Para que se usa está ACT:
+    <ul>
+      <li>Es el total de acumulación total que puedes hacer por turno</li>
+      <li>La magia que recuperas al día (Con descanso)</li>
+      <li>Calcular la acumulación pasiva</li>
+    </ul>
+    Ejemplos:
+    <div class="ejemplo"><b>Midnightt</b> tiene un total de poder de 7, por lo que tiene una ACT de 5, se compra 2
+      multiplicadores por lo que su ACT final es de <span class="tirada">5+2x5=15</span>. Mientras, <b>Vizarra</b>
+      que es una gran conjuradora tiene 9 cuya acumulación es de 10 y se compra un multiplicador por lo que:
+      <span class="tirada">10+10x1=20</span> por lo que ella acumulara 20 por turno.
+    </div>
+    <h5>Daño mientras se acumula</h5>
+    Si tienes cierto <span class="ref">Zeon</span> acumulado para un conjuro y te hacen daño, necesitas hacer una tirada
+    de resistencia al daño
+    contra el doble del daño.
+    <div class="ejemplo">
+      <b>Midnightt</b> lleva varios turnos cargando <span class="ref">Zeon</span> y tiene un total de <span
+        class="tirada">75</span> pero un Roc
+      decide cagar encima y le hace <span class="tirada">38</span> puntos de daño, por lo que <b>Midnightt</b> hace
+      una
+      tirada
+      de resistir dolor dificultad 76 para no perder los 75 de <span class="ref">Zeon</span> acumulados.
+    </div>
+    <h4>Recuperación de magia</h4>
+    Recuperas tu ACT de forma diaria, pero hay contenedores y objetos que te permiten absorber magia. Aparte puedes
+    tomar
+    <span class="ref">Zeon</span> de otros magos que te lo ceda. <br /> Con Dones puedes mejorar está recuperación.
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Regla de la casa</h5>
+        <div class="card-text">
+          En partidas frenéticas, permito el uso de <span class="ref">Meditación</span> para recuperar más rápido magia,
+          generalmente lo pacto
+          antes de la partida, pero suele ser dependiendo de la zona y se recupera cada hora.
+        </div>
+      </div>
+    </div>
+    <h4>Acumulación pasiva</h4>
+    Se calcula a partir de la ACT y es el coste de conjuros que puedes lanzar de forma instantánea sin gastar <span
+      class="ref">Zeon</span>.
+    <h4>Conjuros Mantenidos</h4>
+    Hay conjuros que puedes mantener en el tiempo y estos por lo general tienen un coste diario, que se saca de lo que
+    recuperas diariamente.
+    <h4>Vías de magia</h4>
+    Existen varias vías de magia, las dividiré en dos grupos.
+    <ul>
+      <li>Luz, Oscuridad, Creación, Destrucción y Nigromancia.</li>
+      <li>Fuego, Aire, Tierra, Agua, Esencia y Mentira.</li>
+    </ul>
+    El nivel en ellas depende de la inteligencia y se compran vías de magia hasta cierto punto.
+    <h5>Conjuros de libre acceso</h5>
+    Son conjuros comunes entre vías de magia que se eligen.
+  </div>
+  <div class="basic" id="conjuracion">
+    Posiblemente sea el peor poder que existe en Anima, cada una de las 4 habilidades tiene su propia habilidad y
+    comparte <span class="ref">Zeon</span> con los magos. Las dificultades son enormes y los fallos se pagan caros.
+    <br />
+    El problema es que es el que más trabajo le da al director de juego, porque tiene que trabajar tus invocaciones.
+    <div class="ejemplo">
+      Yo solo se lo permitía a jugadores activos que viera que se implicaran con la partida.
+    </div>
+    <h2>Conjuración</h2>
+    Conjurar es el dominio de algún tipo de los seres especiales, si tienes el nombre, un objeto personal y familiaridad
+    con el ser, será más fácil. Para todas las tiradas la dificultad depende del nivel del ser y del nivel el coste.
+    <br />
+    Los fallos en las habilidades se pagan, de verdad, pueden pasar cosas bastante fastidiadas.
+    <h5>Invocar</h5>
+    Es llamar ante ti al ser sobrenatural, es segunda más sencillo dificultad mínima 140, el problema es que conseguir
+    que
+    venga no implica que te ayude.
+    <h5>Controlar</h5>
+    Permite dar órdenes a seres sobrenaturales, es tremendamente difícil, la dificultad más baja es 180.
+    <h5>Desconvocar</h5>
+    Mandando a gente a su plano de existencia, es lo más fácil dificultad 100.
+    <h5>Atar</h5>
+    Usando está habilidad, un convocador puede encerrar criaturas sobrenaturales en el interior de objetos físicos o de
+    seres vivo.
+    Hay que renovar la atadura diariamente y es la segunda más difícil dificultad mínima de 160.
+    <h5>Familiar</h5>
+    Algunas personas tienen la capacidad de unir parte de su esencia con criaturas
+    sobrenaturales, estableciendo un lazo indivisible entre ambos. Para crearlo,
+    entremezclan sus espíritus de manera que, el uno y el otro, tienen ahora un
+    destino común. Estas entidades son conocidas generalmente como familiares.
+    Requiere una atadura y un pacto con este familiar.
+    <h5>Grandes invocaciones</h5>
+    Al más puro estilo de <span class="ref">Final Fantasy </span> hay invocaciones que se consiguen mediante pactos con
+    grandes entes.
+    Estas invocaciones tienen una dificultad y un coste en <span class="ref">Zeon</span>, cuando llegan realizan la
+    acción pactada y listo.
+  </div>
+  <div class="basic" id="poderesPsiquicos">
+    <h2>Psíquicos</h2>
+    Los psíquicos también necesitan ventaja propia para usar sus poderes, que se realizan mediante una tirada en la
+    tabla correspondiente.
+    <h5>Mis puntos de magia son raros</h5>
+    No sé quién decidió los nombres de las características, pero aquí tienes una cosa llamada CV (consumos de voluntad).
+    Yo los llamo puntos de psiónica. <br />
+    Los CV se empieza teniendo uno y se consiguen comprando y por nivel. Permiten:
+    <ul>
+      <li>Poner bonos permanentes a la tabla de un poder</li>
+      <li>Potenciar una tirada</li>
+    </ul>
+  </div>
+  <div class="basic" id="marciales">
+    <h2>Poderes de <span class="ref">Ki</span></h2>
+    Los poderes de <span class="ref">Ki</span> al final todos los pueden tener, pero los tecnicistas los consiguen más
+    rápido. Es el equivalente
+    al <span class="ref">Ki</span> de <span class="referencia">Naruto</span>, un poder marcial que te deja hacer cosas
+    de <span class="referencia">Jedí</span> como andar por las paredes o volar.
+    <h5>Pasivas</h5>
+    Son habilidades que vas a tener de forma pasiva y se compran con el conocimiento marcial. Vienen en la hoja, aunque
+    luego la mejoraron en otro manual agregando nuevos y la hoja normal se queda corta.
+    <h5>Características usadas</h5>
+    Se usan todas menos la voluntad y la percepción, cada técnica especial requiere un coste dependiendo de lo que haga.
+    <h5>Acumulación</h5>
+    Al igual que el <span class="ref">Zeon</span> se va sacando fuera cierta cantidad de chi de la característica, pero
+    puedes sacar la mitad y
+    seguir combatiendo, y no pierdes <span class="ref"><span class="ref">Ki</span></span> si te hacen daño.
+    <h5>Creación de poderes</h5>
+    Se hace mediante un grupo de listas, pero lo importante es intentar ser consciente de los costes y preparar tablas
+    de poderes, lo normal son 2 de nivel 1, 2 de nivel 2 y 1 de nivel 3.
+  </div>
+  <div class="basic" id="faqgenerales">
+    <h2>FAQ sobre el sistema</h2>
+    Iré agregando conforme se pregunte.
+    <div class="pregunta">Invocaciones ¿Es necesario acumular <span class="ref">Zeon</span> con tu ACT para emplear una
+      Invocación?</div>
+    <div class="respuesta">No. Se quita de forma automática</div>
+  </div>
+  <div class="basic" id="faqventajas">
+    <h2>FAQ Ventajas</h2>
+    <div class="pregunta">¿Puedo usar mis puntos de subir nivel para comprarme ventajas?</div>
+    <div class="respuesta">Si, en la pantalla lo recomiendan si queda bien en la historia</div>
+    <div class="pregunta">¿Puedo usar mis puntos de subir nivel para quitarme desventajas?</div>
+    <div class="respuesta">Si, en la pantalla lo recomiendan si queda bien en la historia</div>
+    <div class="pregunta">¿Si no me compro <span class="ref">Elan </span>puedo llegar a tener poderes de dioses?</div>
+    <div class="respuesta">Si, pero avisa al DJ tiene que fijarse en sus acciones</div>
+    <div class="pregunta">¿Puedo tener alergia a cualquier cosa, incluyendo a los unicornios?</div>
+    <div class="respuesta">Si, pero eso se habla con el DJ. Es algo que aparecerá en partida</div>
+  </div>
+  <div class="basic" id="faqpreguntas">
+    <h2>FAQ preguntas sobre mis partidas</h2>
+    <div class="pregunta">¿Usas música en tus partidas?</div>
+    <div class="respuesta">Si y no. Creo que una buena música ayuda mucho a la partida. Pero tengo un requisito, quiero
+      tenerla separada por emociones y no tiene que impedir escucharnos entre nosotros. <br />
+      Acepto ayuda con la música, y la necesito, soy malo eligiendo música.
+    </div>
+    <div class="pregunta">¿Tienes un contrato para jugar tus partidas? ¿En serio?</div>
+    <div class="respuesta">Si, rara vez lo uso, pero con algunos jugadores lo acabe sacando.
+      Si, en serio. Establece cosas que todos sabemos, pero no está de más recordar.
+    </div>
+    <div class="pregunta">¿Por qué dices que los jugadores tienen que trabajar en las partidas?</div>
+    <div class="repuesta">El director de juego se trabaja todo, pero también es un jugador y si puedes ayudarle,
+      conociendo lo que hace tu personaje y ayudando con tu historia y preparando algún tipo de ayuda, te lo
+      agradecerá.
+    </div>
+    <div class="pregunta">¿Te consideras un buen director de juego?</div>
+    <div class="respuesta">No, no soy bueno, pero me gusta crear historias, Hay gente mucho mejor. A mí me gusta
+      preparar partida de reacción, que es dejar que los jugadores estén libres por el mundo y que se genere historia a
+      partir de sus acciones, pero eso no siempre funciona y puede acabar siendo aburrido si no resulta.</div>
+    <div class="pregunta">¿Cuál consideras que es tu mayor defecto dirigiendo?</div>
+    <div class="respuesta">Los tiempos, suelo dar más tiempo de partida a quien más hable y me cuesta dividirlo.
+    </div>
+    <div class="pregunta">¿Por qué ese PNJ cambio 3 veces de voz?</div>
+    <div class="respuesta">Practico poniendo voces, pero no siempre recuerdo la voz de un PNJ. Lo siento</div>
+  </div>
+
+</body>
+
+</html>
