@@ -1,131 +1,464 @@
-Resumen super rápido de Anima
-Antes de todo decir que la razón por la que no me gusta la historia de anima es por la gran cantidad de referencias bíblicas y que intentan meter muchas cosas a calzador. 
-Es una guía para poder consultar en cualquier momento, no es necesario leerlo, y de la parte de historia te puedes saltar TODO hasta hoy en día.
-Historia demasiado antigua
+<!DOCTYPE html>
+<html lang="es">
 
-Anima es un juego de rol en el que se ha perdido toda referencia al pasado, existió un pasado lleno de tecnología magia y seres maravillosos, pero todo eso se acabó después de la guerra.
-Los dos grandes dioses C’iel y Gaira fueron totalmente olvidados, pero hay un montón de referencias a ellos en excavaciones, Pero igualmente es como AO el dios de Reinos Olvidados, todo jugador sabe que existe, aparece en el manual, pero oficialmente nadie lo conoce.
-A partir de C’iel aparecieron los Beryl que son algo parecido a ángeles que conceden poderes a los mortales y a partir de Gaira los Shajad que son demonios que también dan poderes a los mortales.
-Aparece una guerra de las grandes, todas las razas creando nuevas tecnologías y modificando la magia para partirse la cara y los que mas pegaban eran los Duk’Zarist siguiendo a Gaira, aunque esto no se recuerde, lo importante es saber que hay un montón de zonas escondidas por el mundo con tecnología Duk’zarist.
-Estando todo en ruinas y el mundo Gaïa en ruinas algunos individuos llegaron a poderes de dioses casi y los Beryl y Shajad fueron interviniendo menos en el mundo, por lo que el nivel de poder del mundo fue bajando. Aparecieron los primeros grandes conquistadores que crearon sus reinos y quisieron tomar Gaïa uno de estos reinos es el de Sólomon.
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin-left: 10px;
+            margin-bottom: 10px;
 
-Llegada de Cristo
-Aparece Cristo y viene a hablar de dios y bueno esa historia es una copa. Cristo es majo, pero le traiciona un apóstol y le crucifican, solo que la ciudad en la que es crucificado es en la de Sólomon.
-A partir de la tumba de Cristo se crea Arkángel y son los cimientos del sacro imperio de Abel, los once apóstoles que quedan se distribuyen el mundo y se vuelven reyes santos.
-La magia se prohíbe, salvo que seas un santo de la iglesia, y se cierran fronteras.
-Fuera de las fronteras aparece el 12 reino del hombre Rah, el ultimo descendiente de Iscariote, que forma Judas. Esta nación unifica a todo lo que la doctrina del Mesías repudia y no usa los dogmas cristianos. 
-Aparecen las grandes sociedades secretas que nadie conoce pero que hay terias de la conspiración:
--	Tecnocracia Elfos
--	Illuminati Duk’zarist
--	Imperion Humanos
+        }
 
-Se lía tan gorda que se divide el mundo en tres partes, una para cada uno, bajando los dioses y todo.
-El Sacro Santo Imperio de Abel
+        .pregunta {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 14pt;
+        }
 
-Zhorne Giovani un tipo que unifico los 11 reinos a base de pelearse en la guerra que partió el mundo forma el Sacro santo imperio de Abel. Creo la figura de los 4 señores de la guerra y del sumo arzobispo (Que es el equivalente al Papa).
-Como hay cosas que se ocultan, la iglesia crea a la inquisición, que básicamente están para buscar y matar a aquello que no sea humano. Pero Zhorne dijo, por si acaso creo a los Templarios para que, en vez de romper, preserven todo lo mágico en un sitio, Tol Rauko. Como decir Templarios era copiar demasiado les llamaron “Caballeros de Tol Rauko”, pero bueno, era como los Templarios de nuestra historia, preservaban mas que destruir cosas “esotéricas”.
-Como era previsto con el paso del tiempo la gente se olvido de su pasado y los seres chungos fueron olvidados poco a poco.
+        .respuesta {
+            font-style: italic;
+        }
 
-Hoy en día
+        .ejemplo {
+            font-style: italic;
+            font-size: 13pt;
+        }
 
-El padre del actual emperador era un tirano de estos que están mejor muertos, el arzobispo manda a su hijo a reinar un reino lejos y el trono imperial queda vacío y bueno, Problemas mentales del hijo que ahora reina en un reino menor (Lucrecio) porque su mujer murió en el parto y le echa la culpa a su hija.
-El ultimo sumo arzobispo muere sin dejar a nadie para el trono y se lía en la iglesia.
-Sin nadie en el trono la magia empieza a aparecer por todo Gaïa y las almas de los seres sobrenaturales que murieron se empiezan a reencarnar metiéndose en cuerpos humanos apareciendo los Nephilim.
+        span.tirada {
+            color: red;
+        }
 
-El mundo
-Política
-Aunque se supone que todo es un Imperio se divide en principados, que es el equivalente a países y reinos (solo que todos rendirán pleitesía al emperador, pero ya no está).
-La iglesia tiene influencia en todos los territorios, aunque en algunos es sutil.
-El calendario es el del mundo real, el idioma es el Latín, pero existen otros y está en una época parecida al renacimiento.
+        span.ref {
+            color: purple;
+            font-weight: bold;
+        }
 
-Ley y tribunales
-Por lo general, la ley del Sacro Santo Imperio está bastante bien constituida. Para hacerse una idea, lo mejor es imaginar los últimos años de la Ilustración, con algunos adelantos poco comunes. Por lo general, se aplican las mismas leyes para nobles y plebeyos, aunque cada estamento tiene su propio tribunal y, naturalmente, el aristócrata es mucho más permisivo con los privilegiados. Cada principado tenía sus propias leyes, pero el Imperio dictaba una serie de doctrinas jurídicas de las que no podían desvincularse.
-La pena de muerte se daba sólo en situaciones muy poco habituales, únicamente como condena por alta traición, asesinato o crímenes de índole religiosa (habitualmente juzgados por los inquisidores y los tribunales eclesiásticos). La esclavitud estaba completamente abolida sin importar el color de la piel, aunque no la servidumbre.
-La gran mayoría de países que se han separado del Imperio ignoran ahora las directrices de Abel, pero dado que su sistema legal era tan adelantado, los más desarrollados culturalmente siguen aplicándolo. Por el contrario, algunos países más tradicionalistas, como Lannet, Goldar, Kushistán o Corinnia, tienen leyes mucho más anticuadas.
+        .basic {
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 70px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambientacion</title>
+</head>
 
-Paises
+<body>
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand" href="#inicio">Inicio</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Historia</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a href="#antigua" class="dropdown-item">Demasiado antigua</a>
+                            <a href="#cristo" class="dropdown-item">Llegada de Cristo</a>
+                            <a href="#historiaAbel" class="dropdown-item">Imperio de Abel</a>
+                            <a href="#hoyendia" class="dropdown-item">Hoy en dia</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">El mundo</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a href="#politica" class="dropdown-item">Política</a>
+                            <a href="#ley" class="dropdown-item">Ley y tribunales</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Países</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a href="#imperio" class="dropdown-item">El Sacro Santo Imperio de Abel</a>
+                            <a href="#yermos" class="dropdown-item">Los Yermos Gélidos</a>
+                            <a href="#oscuras" class="dropdown-item">Las Tierras Oscuras</a>
+                            <a href="#comercio" class="dropdown-item">La Costa de Comercio</a>
+                            <a href="#azur" class="dropdown-item">La Alianza Azur</a>
+                            <a href="#episcopales" class="dropdown-item">Los estados episcopales</a>
+                            <a href="#independientes" class="dropdown-item">Estados Independientes</a>
+                            <a href="#varja" class="dropdown-item">Varja, las tierras orientales</a>
+                            <a href="#neutrales" class="dropdown-item">Las zonas neutrales</a>
+                            <a href="#nuevocont" class="dropdown-item">El Nuevo Continente</a>
+                            <a href="#islaslejanas" class="dropdown-item">Las islas lejanas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Ciudades</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a href="#arkangel" class="dropdown-item"><span class="ref">Arkángel</span></a>
+                            <a href="#hecate" class="dropdown-item">Hécate</a>
+                            <a href="#americh" class="dropdown-item">Americh</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Organizaciones</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a href="#iglesia" class="dropdown-item">La iglesia</a>
+                            <a href="#templarios" class="dropdown-item">Tol Rauko</a>
+                            <a href="#ordencielo" class="dropdown-item">La orden del cielo</a>
+                            <a href="#samael" class="dropdown-item">Samael</a>
+                            <a href="#solnegro" class="dropdown-item">Sol negro</a>
+                            <a href="#wissenchaft" class="dropdown-item">Wissenchaft</a>
+                            <a href="#selene" class="dropdown-item">Selene</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">El mundo de las sombras</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a href="#flujoalmas" class="dropdown-item">El Flujo de Almas</a>
+                            <a href="#vigilia" class="dropdown-item">La Vigilia</a>
+                            <a href="#infierno" class="dropdown-item">El infierno</a>
+                            <a href="#Shajad" class="dropdown-item"><span class="ref">Shajad</span></a>
+                            <a href="#Beryl" class="dropdown-item"><span class="ref">Beryl</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="basic" id="inicio">
+        <h1>Resumen super rápido de Anima</h1>
 
-El sacro santo imperio de Abel
-Abel
-Abel es el corazón del Sacro Santo Imperio. Regido por la niña Emperatriz Elisabetta Barbados, es la región más próspera y poderosa de toda Gaïa.
-Arlan
-Especializado en el comercio marítimo y lo rigen los 7 mas ricos del territorio, el consejo.
-Dalaborn
-Torres y murallas se alzan por doquier, y la multitud de soldados que marcha por las calles da el aspecto a sus ciudades de encontrarse continuamente en guerra. La nobleza aristocrática ocupa un lugar favorecido y la burguesía es escasa. La carencia de adornos en los edificios dice mucho de sus habitantes, acostumbrados a lo práctico y lo duradero.
-Kanon
-Controla las rutas marítimas y es quien tiene las mayores fuerzas navales.
-Galgados
-Donde se encuentran las ruinas de la antigüedad, es donde más armas se fabrican.
-Ilmora
-Sede cultural del viejo imperio. Consejo formado por Doce eruditos.
-Helenia
-Región de ganaderos y agricultores.
-Alberia
-Frondosos bosques y verdes montes.
+        Antes de todo decir que la razón por la que no me gusta la historia de anima es por la gran cantidad de
+        referencias
+        bíblicas y que intentan meter muchas cosas a calzador.
+        Es una guía para poder consultar en cualquier momento, no es necesario leerlo, y de la parte de historia te
+        <b>puedes
+            saltar TODO hasta hoy en día.</b>
+    </div>
+    <div class="basic" id="antigua">
+        <h1>Historia demasiado antigua</h1>
+        <p>Anima es un juego de rol en el que se ha perdido toda referencia al pasado, existió un pasado lleno de
+            tecnología magia y seres maravillosos, pero todo eso se acabó después de la guerra.</p>
+        <p>
+            Los dos grandes dioses <span class="ref">C’iel</span> y <span class="ref">Gaira</span> fueron totalmente
+            olvidados, pero hay un montón de referencias a ellos en excavaciones, Pero igualmente es como AO el dios de
+            Reinos Olvidados, todo jugador sabe que existe, aparece en el manual, pero oficialmente nadie lo conoce.
+        </p>
+        <p>A partir de <span class="ref">C’iel</span> aparecieron los <span class="ref">Beryl</span> que son algo
+            parecido
+            a ángeles que conceden poderes a los mortales y a
+            partir de <span class="ref">Gaira</span> los <span class="ref">Shajad</span> que son demonios que también
+            dan
+            poderes a los mortales.</p>
+        <p>Aparece una guerra de las grandes, todas las razas creando nuevas tecnologías y modificando la magia para
+            partirse la cara y los que mas pegaban eran los <span class="ref">Duk’zarist</span> siguiendo a <span
+                class="ref">Gaira</span>, aunque esto no se recuerde, lo importante
+            es saber que hay un montón de zonas escondidas por el mundo con tecnología <span
+                class="ref">Duk’zarist</span>.
+            Estando todo en ruinas y el mundo <span class="ref">Gaïa</span> en ruinas algunos individuos llegaron a
+            poderes de dioses casi y los
+            <span class="ref">Beryl</span> y <span class="ref">Shajad</span> fueron interviniendo menos en el mundo, por
+            lo
+            que el nivel de poder del mundo fue bajando. Aparecieron
+            los primeros grandes conquistadores que crearon sus reinos y quisieron tomar <span class="ref">Gaïa</span>
+            uno de estos reinos es el de
+            Sólomon.
+        </p>
+    </div>
+    <div class="basic" id="cristo">
+        <h2>Llegada de Cristo</h2>
+        <p>Aparece Cristo y viene a hablar de dios y bueno esa historia es una copa. Cristo es majo, pero le traiciona
+            un apóstol y le crucifican, solo que la ciudad en la que es crucificado es en la de Sólomon.</p>
+        <p>A partir de la tumba de Cristo se crea <span class="ref">Arkángel</span> y son los cimientos del sacro
+            imperio de Abel, los once apóstoles que quedan se distribuyen el mundo y se vuelven reyes santos.<b>La magia
+                se
+                prohíbe</b>, salvo que seas un santo de la iglesia, y se cierran fronteras.</p>
+        <p>Fuera de las fronteras aparece el 12 reino del hombre Rah, el ultimo descendiente de Iscariote, que forma
+            Judas.
+            Esta nación unifica a todo lo que la doctrina del Mesías repudia y no usa los dogmas cristianos.</p>
+        <p>Aparecen las grandes sociedades secretas que nadie conoce pero que hay terias de la conspiración:
+        <ul>
+            <li>Tecnocracia Elfos</li>
+            <li>Illuminati Duk’zarist</li>
+            <li>Imperion Humanos</li>
+        </ul>
+        </p>
+        <p>Se lía tan gorda que se divide el mundo en tres partes, una para cada uno, bajando los dioses y todo.
+        </p>
+    </div>
+    <div class="basic" id="historiaAbel">
+        <h1>El Sacro Santo Imperio de Abel</h1>
+        <p>
+            <span class="ref">Zhorne Giovani</span> un tipo que unifico los 11 reinos a base de pelearse en la guerra
+            que partió el mundo forma el Sacro santo imperio de Abel. Creo la figura de los 4 señores de la guerra y del
+            sumo arzobispo (Que es el equivalente al Papa).
+        </p>
+        <p>Como hay cosas que se ocultan, la iglesia crea a la inquisición, que básicamente están para buscar y matar a
+            aquello que no sea humano. Pero Zhorne dijo, por si acaso creo a los Templarios para que, en vez de romper,
+            preserven todo lo mágico en un sitio, <span class="ref">Tol Rauko</span>. Preservaban más que destruir cosas
+            “esotéricas”. Como era previsto con el paso del tiempo la gente se olvido de su pasado y los seres chungos
+            fueron olvidados poco a poco.</p>
+    </div>
+    <div class="basic" id="hoyendia">
+        <h2>Hoy en día</h2>
+        El padre del actual emperador era un tirano de estos que están mejor muertos, el arzobispo manda a su hijo a
+        reinar un reino lejos y el trono imperial queda vacío y bueno, Problemas mentales del hijo que ahora reina en un
+        reino menor (Lucrecio) porque su mujer murió en el parto y le echa la culpa a su hija. El ultimo sumo arzobispo
+        muere sin dejar a nadie para el trono y se lía en la iglesia. Sin nadie en el trono la magia empieza a aparecer
+        por todo Gaïa y las almas de los seres sobrenaturales que murieron se empiezan a reencarnar metiéndose en
+        cuerpos humanos apareciendo los <b>Nephilim</b>.
 
-Los Yermos Gélidos
-Goldar
-Conjunto de feudos que se pelean entre sí.
-Hendell
-Solo la parte sur es habitable, la gente vive en ciudades fortaleza llamadas Bastiones.
-Haufman
-Clima extremo, es conocido como el pico del mundo.
+    </div>
+    <h1>El Mundo</h1>
+    <div class="basic" id="politica">
+        <h1>Política</h1>
+        <p>Aunque se supone que todo es un Imperio se divide en principados, que es el equivalente a países y reinos
+            (solo que todos rendirán pleitesía al emperador, pero es una niña).</p>
+        <p>La iglesia tiene influencia en todos los territorios, aunque en algunos es sutil.</p>
+        <p>El calendario es el del mundo real, el idioma es el Latín, pero existen otros y está en una época parecida al
+            renacimiento.</p>
+    </div>
+    <div class="basic" id="ley">
+        <h1>Ley y tribunales</h1>
+        <p>Por lo general, la ley del Sacro Santo Imperio está bastante bien constituida. Para hacerse una idea, lo
+            mejor es imaginar los últimos años de la Ilustración, con algunos adelantos poco comunes. Por lo general, se
+            aplican las mismas leyes para nobles y plebeyos, aunque cada estamento tiene su propio tribunal y,
+            naturalmente, el aristócrata es mucho más permisivo con los privilegiados. Cada principado tenía sus propias
+            leyes, pero el Imperio dictaba una serie de doctrinas jurídicas de las que no podían desvincularse.</p>
+        <p>La pena de muerte se daba sólo en situaciones muy poco habituales, únicamente como condena por alta traición,
+            asesinato o crímenes de índole religiosa (habitualmente juzgados por los inquisidores y los tribunales
+            eclesiásticos). La esclavitud estaba completamente abolida sin importar el color de la piel, aunque no la
+            servidumbre.</p>
+        <p>La gran mayoría de países que se han separado del Imperio ignoran ahora las directrices de Abel, pero dado
+            que su sistema legal era tan adelantado, los más desarrollados culturalmente siguen aplicándolo. Por el
+            contrario, algunos países más tradicionalistas, como Lannet, Goldar, Kushistán o Corinnia, tienen leyes
+            mucho más anticuadas.</p>
+    </div>
+    <h1>Países</h1>
+    <div class="basic" id="imperio">
+        <h1>El sacro santo imperio de Abel</h1>
+        <h3>Abel</h3>
+        Abel es el corazón del Sacro Santo Imperio. Regido por la niña Emperatriz <span class="ref">Elisabetta
+            Barbados</span> , es la región más próspera y poderosa de toda Gaïa.
+        <h3>Arlan</h3>
+        Especializado en el comercio marítimo y lo rigen los 7 mas ricos del territorio, el consejo.
+        <h3>Dalaborn</h3>
+        Torres y murallas se alzan por doquier, y la multitud de soldados que marcha por las calles da el aspecto a sus
+        ciudades de encontrarse continuamente en guerra. La nobleza aristocrática ocupa un lugar favorecido y la
+        burguesía es escasa. La carencia de adornos en los edificios dice mucho de sus habitantes, acostumbrados a lo
+        práctico y lo duradero.
+        <h3>Kanon</h3>
+        Controla las rutas marítimas y es quien tiene las mayores fuerzas navales.
+        <h3>Galgados</h3>
+        Donde se encuentran las ruinas de la antigüedad, es donde más armas se fabrican.
+        <h3>Ilmora</h3>
+        Sede cultural del viejo imperio. Consejo formado por Doce eruditos.
+        <h3>Helenia</h3>
+        Región de ganaderos y agricultores.
+        <h3>Alberia</h3>
+        Frondosos bosques y verdes montes.
+    </div>
+    <div class="basic" id="yermos">
+        <h1>Los Yermos Gélidos</h1>
+        <h3>Goldar</h3>
+        Conjunto de feudos que se pelean entre sí.
+        <h3>Hendell</h3>
+        Solo la parte sur es habitable, la gente vive en ciudades fortaleza llamadas Bastiones.
+        <h3>Haufman</h3>
+        Clima extremo, es conocido como el pico del mundo.
+    </div>
+    <div class="basic" id="oscuras">
+        <h1> Las tierras oscuras </h1>
+        <h3>Moth</h3>
+        Juntas <span class="ref">Silent Hill</span> con un poco de <span class="ref">Ravenloft</span> y le das una pizca
+        de <span class="ref">Transilvania</span> y tienes Moth
+        <h3>Dwänholf</h3>
+        Zona perfecta para bandoleros y piratas.
+    </div>
+    <div class="basic" id="comercio">
+        Se mantienen al margen del imperio, pero hacen tratos de comercio con ellos
+        <h1>La costa de comercio.</h1>
+        <h3>Gabriel</h3>
+        Riqueza en estado puro, Palacios, anfiteatros, altas torres….
+        <h3>Phaion</h3>
+        Exportadora de artículos de primera necesidad con una gran cantidad de pescadores y odian a los de Dwänwolf.
+    </div>
+    <div class="basic" id="azur">
+        <h1>La Alianza Azur</h1>
+        Eran parte de Abel, pero empezaron a rechazar su dinero y cambiar el calendario. Se están independizando.
+        <h3>Togarini</h3>
+        Los primeros en independizarse, por que el señor de la guerra se niega a reconocer a <span
+            class="ref">Elisabetta</span>.
+        <h3>Bellafonte</h3>
+        Sobre ella tienen influencia los estados episcopales, la inquisición es quien juzga de la forma más radical.
+        <h3>Remo</h3>
+        Corrupción y mala administración hicieron de este un reino en gran pobreza.
+    </div>
+    <div class="basic" id="episcopales">
+        <h1>Estados Episcopales.</h1>
+        Están controlados de modo casi exclusivo por la iglesia.
+        <h3>El dominio</h3>
+        Sede de la iglesia.
+        <h3>Argos</h3>
+        Es el brazo armado del Dominio.
+    </div>
+    <div class="basic" id="independientes">
+        <h1>Estados independientes.</h1>
+        <h3>Kushistan</h3>
+        Zonas desérticas que se juntan con oasis verdes con palacios, el esclavismo está permitido. Se pelean con la
+        iglesia y rechazan el imperio.
+        <h3>Estigia</h3>
+        Se basa en el esclavismo y en el comercio.
+        <h3>Salazar</h3>
+        Desierto con nómadas.
+        <h3>Kashmir</h3>
+        Zona de tribus más allá del desierto de Salazar.
+        <h3>Nanwe</h3>
+        Zona selvática poco explorada.
+        <h3>Baho</h3>
+        Escarpadas cordilleras de gran altitud con valles y lagos aislados.
+    </div>
+    <div class="basic" id="varja">
+        <h1>Varja, las tierras orientales.</h1>
+        El equivalente a la cultura asiática de China, Japón y Korea.
+        <h3>Lannet</h3>
+        Existen dos estamentos, sirvientes y nobles y son muy racistas.
+        <h3>Shivat</h3>
+        Cuna de las artes marciales y no tan racistas como los vecinos.
+    </div>
+    <div class="basic" id="neutrales">
+        <h1>Las zonas neutrales</h1>
+        No pertenecen a ninguna de las anteriores.
+        <h3>Lucrecio</h3>
+        Desarrollo cultural enorme.
+        <h3>El Mar Interior</h3>
+        Un montón de islas sueltas.
+    </div>
+    <div class="basic" id="nuevocont">
+        <h1>El nuevo continente</h1>
+        Por que llamarlo América es demasiado obvio. Es una zona conquistada por el Imperio pero que solo les explotan,
+        ignorándoles bastante.
+        <h3>Manterra</h3>
+        Se planea seguir o no a la emperatriz. Gran agricultura y ganaderia
+        <h3>Arabal</h3>
+        Es conocida como el reino del agua por sus numerosos Lagos y ríos.
+        <h3>Pristina</h3>
+        Densos bosques colinas y valles.
+        <h3>Ygdramar</h3>
+        Reino de feudos independientes.
+        <h3>Corina</h3>
+        Inmensa estepa con numerosos clanes y tribus
+        <h3>Elcia</h3>
+        Vive de la ganadería y las especias, mezcla entre arquitectura barroca y árabe.
+        <h3>Espheria</h3>
+        De los pocos principados que tiene una oposición declarada a la iglesia.
+        <h3>Itzi</h3>
+        Zona selvática con islas tropicales.
+    </div>
+    <div class="basic" id="islaslejanas">
+        <h1>Las islas lejanas</h1>
+        Están tan lejos que les da igual todo.
+        <h3>Dafne</h3>
+        Isla de las rosas, lugar matriarcal.
+        <h3>Bekent</h3>
+        Isla excepcionalmente fría
+    </div>
+    <div class="basic" id="arkangel">
+        <h1>Ciudades del mundo</h1>
+        Lo mas interesante de anima son las grandes ciudades, al menos según sus desarrolladores. <br />
+        Entre ellas hay 3 sobre las que es común que se dirijan partidas, por su tamaño y grandes posibilidades.
+        <h1>Arkángel.</h1>
+        Es la ciudad mas grande de toda Gaïa lugar donde está el trono.
+    </div>
+    <div class="basic" id="hecate">
+        <h1>Hécate</h1>
+        Ciudad adosada en las montañas que en su día tenía otra por debajo. Se conoce como la ciudad en ruinas
+    </div>
+    <div class="basic" id="americh">
+        <h1>Americh</h1>
+        Ciudad de libre comercio, con un montón de bandidos y maleantes. No es la única ciudad de “comercio libre” pero
+        si la primera y más grande de todas.
+    </div>
+    <div class="basic">
+        <h1>Las organizaciones</h1>
+        Estas son las que mas relevancia tienen en el mundo, aunque algunas como Sol negro, Wissenchaft, Samael y Selene
+        en teoría son asociaciones en las sombras.
+    </div>
+    <div class="basic" id="iglesia">
+        <h1>La iglesia</h1>
+        <p>La iglesia vaticana es la organización mas importante, y por importante nos referimos a poderosa. Su sumo
+            arzobispo es conocido como <span class="ref">Magnus</span>, es un fanático obsesionado por la ley de dios.
+        </p>
+        <p>Escisiones, Existen muchas excisiones pero todas sirven de forma directamente o indirecta a la iglesia
+            vaticana.</p>
+        <p>La inquisición, hereje bueno hereje muerto. Son niños huérfanos recogidos por miembros de la iglesia y
+            entrenados desde pequeños. Aunque combaten contra gente con habilidades especiales, ellos también las
+            tienen.</p>
+        <p>Altos inquisidores, la mano ejecutora del Cardenal para las misiones más complejas.</p>
+        <p><span class="ref">Tribunales Inquisitoriales</span>, las cárceles de la iglesia, los de dentro se consideran
+            culpables.</p>
+    </div>
+    <div class="basic" id="templarios">
+        <h1>Tol Rauko</h1>
+        <p>Templarios con conocimientos de arqueología y ocultismo, los segundos más poderosos.</p>
+        <p>Todo el mundo los conoce, pero nadie sabe a qué se dedican.</p>
+        <p>Existen dos tipos, los soldados y los templarios, los templarios van con los mismos uniformes pardos y
+            armaduras rojas completas forjadas para ellos.</p>
+    </div>
+    <div class="basic" id="ordencielo">
+        <h1>La Orden del Cielo</h1>
+        Ejercito privado de la emperatriz.
+    </div>
+    <div class="basic" id="samael">
+        <h1>Samael</h1>
+        Seres sobrenaturales que se ocultaron, es una sociedad secreta
+    </div>
+    <div class="basic" id="solnegro">
+        <h1>Sol Negro</h1>
+        Es una copia de sol negro de Star Wars. Grupo de ladrones y del mercado negro.
+    </div>
+    <div class="basic" id="wissenchaft">
+        <h1>Wissenchaft</h1>
+        Lucanor el padre de la Emperatriz, al que mandaron a Lucrecio se creo su grupo de científicos que estudian cosas
+        de eras pasadas.
+    </div>
+    <div class="basic" id="selene">
+        <h1>Selene</h1>
+        Asesinas, mujeres, siempre mujeres.
+    </div>
+    <div class="basic" id="flujoalmas">
+        <h1> El mundo de las sombras.</h1>
+        <h1>El flujo de almas</h1>
+        A donde vas cuando mueres, cuanto mas poderoso eres mas tardas en juntarte al flujo de todas las almas.
+    </div>
+    <div class="basic" id="vigilia">
+        <h1>La vigilia</h1>
+        Es la faceta umbría de este mundo, equivale a la Umbra de hombre lobo.
+        La diferencia es que se ve modificada por los sueños y si es muy oscura puede generar pesadillas.
+    </div>
+    <div class="basic" id="infierno">
+        <h1>El Infierno</h1>
+        Todo lo exterior y que quedo fuera de la barrera se considera Infierno y todo lo raro demonios.
+    </div>
+    <div class="basic" id="Shajad">
+        <h1>Shajad</h1>
+        Son equivalente a demonios que se pueden fijar en ti y darte poderes.
+    </div>
+    <div class="basic" id="beril">
+        <h1>Beryl</h1>
+        Son equivalentes a ángeles que pueden fijarse en ti y darte poderes.
+    </div>
+</body>
 
-Las tierras oscuras 
-Moth
-Juntas Silent Hill con un poco de Ravenloft y le das una pizca de Transilvania y tienes Moth
-Dwänholf
-Zona perfecta para bandoleros y piratas.
-
-La costa de comercio.
-Se mantienen al margen del imperio, pero hacen tratos de comercio con ellos
-Gabriel
-Riqueza en estado puro, Palacios, anfiteatros, altas torres….
-Phaion
-Exportadora de artículos de primera necesidad con una gran cantidad de pescadores y odian a los de Dwänwolf.
-La Alianza Azur
-Eran parte de Abel, pero empezaron a rechazar su dinero y cambiar el calendario. Se están independizando.
-Togarini
-Los primeros en independizarse, por que el señor de la guerra se niega a reconocer a Elisabetta.
-Bellafonte
-Sobre ella tienen influencia los estados episcopales, la inquisición es quien juzga de la forma más radical.
-Remo
-Corrupción y mala administración hicieron de este un reino en gran pobreza.
-
-Estados Episcopales.
-Están controlados de modo casi exclusivo por la iglesia.
-El dominio
-Sede de la iglesia.
-Argos
-Es el brazo armado del Dominio.
-
-Estados independientes.
-Kushistan
-Zonas desérticas que se juntan con oasis verdes con palacios, el esclavismo está permitido. Se pelean con la iglesia y rechazan el imperio.
-Estigia
-Se basa en el esclavismo y en el comercio.
-Salazar
-Desierto con nómadas.
-Kashmir
-Zona de tribus más allá del desierto de Salazar.
-Nanwe
-Zona selvática poco explorada.
-Baho
-Escarpadas cordilleras de gran altitud con valles y lagos aislados.
-
-Varja, las tierras orientales.
-El equivalente a la cultura asiática de China, Japón y Korea.
-
-Lannet
-Existen dos estamentos, sirvientes y nobles y son muy racistas.
-Shivat
-Cuna de las artes marciales y no tan racistas como los vecinos.
-
-Las zonas neutrales
-No pertenecen a ninguna de las anteriores.
-Lucrecio
-Desarrollo cultural enorme.
-El Mar Interior
-Un montón de islas sueltas.
-El nuevo continente
-Por que llamarlo América es demasiado obvio.
+</html>
