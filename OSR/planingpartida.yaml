@@ -1,0 +1,107 @@
+partida: 
+  nombre: Corte invernal en el castillo mojado
+  descripcion:
+    El castillo mojado esta en la isla mas al sur este del imperio. Ultimo valuarte del imperio, lugar en el que se encuentra el mago conocido como Cuarto y sus siervos
+personages:
+  - Helena Tifon:
+    clase: guerrero
+    quien es: Helena es una shieldmaiden una de las mujeres guerrero mas fuertes del clan del lobo, entrenada como guardaespaldas imperial.
+    hechos:
+      - Se enamoro de su anterior protegida.
+      - Siempre se le vio como una gran promesa.
+      - Tiene un monton de presion por que esperan que sea grande.
+  - Sombra:
+    clase: ladron (Espia)
+    quien es: Sombra es un espia real, pertenece a "La voz del emperador en secreto".
+    hechos:
+      - Hijo de una drogadicta de la capital que fue sacado de los brazos de su madre a los 3 años.
+      - Se desconoce su verdadero nombre, ahora se muestra como hombre o mujer a voluntad por su entrenamiento.
+      - Es tremendamente leal a la gente a la que quiere. Pero pocos saben si reamente se encuentran entre ellos.
+  - Tobias Malsan:
+    clase: Clerigo del dios de las cadenas
+    quien es: Tobias malsan es uno de los sacerdotes guerrero del dios de las cadenas que sirve a la casa imperial.
+    hechos:
+      - Es un sacerdote fanatico de las enseñanzas de las cadenas y buscara probar que no es el eslabon debil.
+      - Tiene una relacion secreta con un@ de los criad@s de la hija del emperador a la que acompaña.
+      - El dios de las cadenas es dios de la guerra el dolor y el coraje.
+  - Yura'Nlazzi:
+    clase: Usuario de Magia.
+    quien es: Es la aprendiz de un mago conocido como el 3º
+    hechos:
+      - Es totalmente fiel a su maestro por sacarle de una vida de exclavitud.
+      - Tiene pesadillas de su epoca de exclaba
+      - Con el tiempo empezo a considerarse una de las mejores amigas de la hija del emperador.
+PNJ:
+  - Martina Falstad:
+      quien es: Es la hija del emperador perteneciente a "La voz del emperador"
+      hechos:
+        - Aparenta tener solo 17 años, pero tiene conocimientos superiores
+        - Es muy atractiva y se esta estudiando con quien contraera nupcias
+        - Es una habil politica
+      rumores:
+        - Cambio de nombre varias veces.
+        - Tiene algun poder magico para dominar a la gente.
+Ambientacion:
+  Religion:
+    explicacion: En esta ambientacion la fe da poder a los dioses
+    religiones:
+      - El gran consejo: 
+        Descripcion: El gran consejo esta formado por los 3 miembros. Ley, Caos y Equidad
+        Hechos:
+          - Los dioses sirven al gran consejo.
+          - Los dioses que sirven solo a un miembro del consejo se les llama agentes
+          - Los dioses que solo responden ante el consejo entero son conocidos como Jueces.
+          - Cualquier dios se considera como servidor del consejo, por lo que surgen nuevos.
+      - El emperador importal:
+        Descripcion: Por su aparente inmortalidad algunos nobles empezaron a tener altares al emperador.
+        Hechos:
+          - El mismo emperador prohibio su culto.
+          - Es una religion que se tiene en secreto.
+          - Algunos piensan que es un Juez de la religion del gran consejo.
+  Historia:
+    Hechos:
+      - El emperador hace 301 años tomo el trono por la fuerza
+      - La primera mujer del emperador fue hace un siglo, desde entonces tuvo multiples mujeres
+      - Los hijos del emperador son los que llevan los asuntos de su padre desde que se recluyo
+      - El emperador empezo a avanzar en confidencialidad.
+    Inventos:
+      - Existe un metal creado por los cientificos del emperador que en contacto con el agua se vuelve incandescente
+      - Empiezan a aparecer multiples artilugios de vapor
+      - Existen las armas de fuego.
+      - Se esta construyendo un Tren
+      - Se esta probando un varco de vapor.    
+  Sociedad:
+    Las 7 casas:
+      informacion: 
+        7 de los atiguos reinos del imperio se convirteron en casas al servicio del emperador, cada una con una especialidad.
+        El octavo al ser destruido se convirtieron en Nomadas.
+      casas:
+        - Casa Wolfhund Protectores del emperador
+        - Casa Verleumder Los que se mueven en las sombras
+        - Casa Verehrer Expertos en duelo y combate con espadas (Guardaespaldas a sueldo de gente noble)
+        - Casa Einhorn Dominan a seres oscuros a quien nadie mas puede dominar.
+        - Casa Griesham Son estudiosos y estudian la Magia.
+        - Casa Kran Son artistas, eruditos y constructores.
+        - Casa Astartes, Vigias del desierto y defensores de lo que llega.
+        - Ahogados, no se les considera casa dado que se enfrentaron al emperador
+    Nomadas:
+      - Fieles a los Ahogados
+      - Ahogados que se reunen una vez al años
+      - Fluviales, viven en barcos
+      - Circenses, se mueven por el imperio.
+    Imperiales:
+      - La mano derecha del emperador
+      - La voz del emperador
+      - La mano oculta del emperador
+      - Imperatum
+    Escuelas de magos:
+      - Escuela de albor
+      - Escuela de ocaso
+      - Escuela Tremula
+      - Escuela Sinem
+    Gremios:
+      - Gremio de alquimistas
+      - Gremio de forjadores
+      - Gremio de artistas
+      - Gremio de creadores.
+Partida:
