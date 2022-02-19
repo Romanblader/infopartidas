@@ -1,0 +1,27 @@
+Notas de: Decktri
+Ambientacion:
+- El mundo esta en guerra y no tiene pinta de acabar.
+- Ningun bando esta cerca de la rendicion.
+- Los civiles sufren.
+PNJ:
+    Basilio trento:
+        - Hijo despistado de un alto cargo.
+        - Es la oveja negra de la familia.
+Lugares:
+    Gran ciudad de Carlsberstein:
+        - Esta sitiada desde hace meses.
+        - Es dificil encontrar comida.
+        - Es dificil encontrar suministros.
+    Cantina del loco:
+        - Es una cantina clandestina.
+        - Intercambian licor por comida y suministros.
+        - Es la unica fuente fiable de agua.
+Agrupaciones:
+    Bando Azul:
+        Aspectos:
+            - Grandes Fanaticos religiosos
+            - No razonan ante nada
+        PNJ:
+            Grievus:
+                - Es un gran general que esta infravalorado
+                - Es capaz de volarle las pulgas a una vaca a 500m
